@@ -2,8 +2,7 @@ import concepts.Input
 import concepts.Output
 import ideas.Good
 import ideas.Not
-import programs.ProgramPrinter
-import java.util.*
+import programs.NamePrinter
 
 interface Program : Concept {
     fun main( input : Input ) : Output {
@@ -34,16 +33,13 @@ interface Program : Concept {
         return end - start
     }
 
-    // iterate to concept
-
-
-    fun iterateToConcept(concept: Concept): Concept
-
-    fun iterateToConcept(concepts: List<Concept>): Concept
+    override fun synthetize( other: Concept ): Concept {
+        return main( Input().put( this ).put( other ) )
+    }
 
     companion object {
         fun default(): Program {
-            return ProgramPrinter()
+            return NamePrinter()
         }
     }
 

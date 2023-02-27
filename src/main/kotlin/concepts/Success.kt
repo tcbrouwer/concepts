@@ -9,7 +9,6 @@ class Success : Concept {
 
         override var name: String = "Success"
         override var description: String = "A concept that is the output of a program"
-        override var examples: List<String> = listOf("Success")
         override var refs: Set<Concept> = setOf(
             Not(),
             Not(),
@@ -17,7 +16,11 @@ class Success : Concept {
             Output()
         )
 
-        val essence: Queue<Concept>
+    override fun synthetize(other: Concept): Concept {
+        return Good()
+    }
+
+    val essence: Queue<Concept>
             get() {
                 val essence = LinkedList<Concept>()
                 essence.add( Not() )

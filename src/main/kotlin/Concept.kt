@@ -3,8 +3,6 @@ interface Concept {
     // Properties
     var name: String
     var description: String
-    var examples: List<String>
-
     var refs: Set<Concept>
 
     // add ref
@@ -12,26 +10,32 @@ interface Concept {
         refs = refs + ref
     }
 
+    fun synthetize( other: Concept ): Concept
+
     // Methods
     fun print() {
         println("Name: $name")
         println("Description: $description")
-        println("Examples: $examples")
     }
 
     private class AbstractConcept: Concept {
         override var name: String = ""
         override var description: String = ""
-        override var examples: List<String> = listOf()
         override var refs: Set<Concept> = setOf()
+        override fun synthetize(other: Concept): Concept {
+            return actualize(
+                name + other.name,
+                description + other.description,
+                refs + other.refs + this + other
+            )
+        }
 
     }
     companion object {
-        fun actualize(name: String, description: String, examples: List<String>, refs: Set<Concept> = setOf()): Concept {
+        fun actualize(name: String, description: String = "missing description", refs: Set<Concept> = setOf()): Concept {
             val abstractConcept = AbstractConcept()
             abstractConcept.name = name
             abstractConcept.description = description
-            abstractConcept.examples = examples
             abstractConcept.refs = refs
             return abstractConcept
         }
