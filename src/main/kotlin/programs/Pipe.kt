@@ -26,6 +26,8 @@ class Pipe : Program {
         return result
     }
 
+    override fun usage(): String = "Pipe [INPUT SIGNAL]"
+
     fun isProgram( concept: Concept ) : Boolean {
         return concept is Program
     }

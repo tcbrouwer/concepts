@@ -12,6 +12,8 @@ class Output : Concept {
         return Output().put( other )
     }
 
+    fun toInput() = Input().put( essence )
+
     fun put( concept: Concept ): Output {
         essence.add( concept )
         return this

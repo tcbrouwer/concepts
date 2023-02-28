@@ -8,7 +8,12 @@ import concepts.Output
 import concepts.Plural
 import java.lang.Thread.sleep
 
-class Clock( val duration: Int ) : Idea(), Program {
+class Clock(val wavelength: Double) : Idea(), Program {
+
+    companion object {
+        val SCALE_FACTOR = 100
+    }
+
     override fun main(input: Input): Output {
         val output = Output()
         input.essence.forEach {
@@ -18,7 +23,9 @@ class Clock( val duration: Int ) : Idea(), Program {
         return output
     }
 
-    fun tick() = sleep(duration.toLong())
+    override fun usage() = "Clock [INPUT SIGNAL]>"
+
+    fun tick() = sleep( (wavelength * SCALE_FACTOR).toLong() )
 
     private class Tick : Concept {
         override var name: String = "ideas.Clock.Tick"

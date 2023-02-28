@@ -1,16 +1,21 @@
+import computers.Computer
+import computers.ComputerThatRunsPrograms
 import concepts.Input
+import concepts.Noop
 import concepts.Output
 import concepts.Plural
 import ideas.Clock
 import ideas.Not
+import ideas.Weave
 import programs.*
-
-val PRIORITY = 5
+import programs.physicals.NamePrinter
+import programs.physicals.Save
+import programs.physicals.UserInput
 
 fun main(args: Array<String>) {
 
     // take a computer
-    val computer = Computer( name = "testComputer1", clock = Clock( PRIORITY * 100 ) )
+    val computer = Computer( name = "fastComputer1", clock = Clock( wavelength = 0.5 ) )
     val output = Output()
 
     computer.printAsConcept( " -- Starting -- " )
@@ -117,13 +122,51 @@ fun main(args: Array<String>) {
 
     computer.churn( Pipe(), Input().put( Concept.actualize("CoPilot")).put( HelloWorld() ).put( Lookup() ) )
 
+    // make a slow computer for experimentation
     computer.shutdown()
+    val slowComputer = Computer( name = "slowComputer1", clock = Clock( wavelength = 0.5 ) )
+
+    // get some input, then print it
+    val x = slowComputer.churn( UserInput(), Input() )
+    slowComputer.churn( NamePrinter(), x.toInput() )
+
+    // weave
+    val copilotWeaveDefinition = Concept.actualize("Weave", "Weave is the process of combining concepts to create a new concept.")
+    val upstreamWeave = Weave()
+
+    val i1 = upstreamWeave.synthetize( Concept.actualize("Input 1", "The first input to the weave.") )
+    val i2 = upstreamWeave.synthetize( Concept.actualize("Input 2", "The second input to the weave.") )
+
+    val inputForWeave = Input()
+    inputForWeave.essence.add( upstreamWeave )
+    inputForWeave.essence.add( i1 )
+    inputForWeave.essence.add( i2 )
+
+    slowComputer.churn( Weave(), Input().put( i1 ).put( i2 ) )
+
+    // save the weave
+    slowComputer.churn( Save(), Input().put( upstreamWeave ).put( copilotWeaveDefinition ).put( Concept.actualize("Automated input") ) )
+
+    // query
+    val query = Concept.actualize("Query", "Query is the process of asking a question.")
+    slowComputer.churn( Query(), Input().put( query ).put( Concept.actualize("Automated input") ) )
+
+    // Send a computer concept to indicate start of computation
+    val computation = Concept.actualize("Computation", "Computation is the process of performing a computation.")
+
+    // shutdown the slow computer
+    slowComputer.shutdown()
+
+    // Get a computer that runs programs
+    val programComputer = ComputerThatRunsPrograms()
+    val lint = Input().put(Noop()).put(Query()).put(Query()).put(Query()).put(Query()).put(Query()).put(Query()).put(Query())
+    programComputer.churnIt( lint )
 
 }
 
 fun godelChurn() {
     // get a computer
-    val computer = Computer( name = "GodelChurner", clock = Clock( PRIORITY * 200 ) )
+    val computer = Computer( name = "GodelChurner", clock = Clock( 1.12349 ) )
 
     // formulate a question
     // what is Godel?

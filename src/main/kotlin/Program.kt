@@ -1,29 +1,11 @@
 import concepts.Input
 import concepts.Output
-import ideas.Good
-import ideas.Not
-import programs.NamePrinter
+import programs.physicals.NamePrinter
 
 interface Program : Concept {
-    fun main( input : Input ) : Output {
-        // print usage
-        usage()
-        // time it
-        val time = runTimed( input )
-        // print time
-        println("Time: $time")
-        // return outQueue
-        val output = Output()
-        output.essence.add(Not())
-        output.essence.add(Not())
-        output.essence.add(Good())
-        // success
-        return output
-    }
+    fun main( input : Input ) : Output
 
-    fun usage() {
-        println("Usage: Program <args>")
-    }
+    fun usage(): String // Program <arg1> <arg2> <arg3> ...
 
     // time it
     fun runTimed( input: Input ): Long {

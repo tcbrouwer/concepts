@@ -12,6 +12,8 @@ class RefLister : Program {
         return output
     }
 
+    override fun usage(): String = "RefLister [INPUT SIGNAL]"
+
     private fun listRefs(concept: Concept): List<Concept> {
         return concept.refs.toList()
     }

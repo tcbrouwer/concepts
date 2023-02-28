@@ -20,6 +20,8 @@ class Evaluate : Program {
         return output
     }
 
+    override fun usage(): String = "Evaluate [INPUT SIGNAL]"
+
     override var name: String = "programs.Evaluate"
     override var description: String = "A program that evaluates all programs on input"
     override var refs: Set<Concept> = setOf()

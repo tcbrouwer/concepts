@@ -1,4 +1,4 @@
-package programs
+package programs.physicals
 
 import Concept
 import Program
@@ -15,7 +15,9 @@ class NamePrinter : Program {
         return output
     }
 
-    override var name: String = "programs.NamePrinter"
+    override fun usage(): String = "NamePrinter [INPUT SIGNAL]"
+
+    override var name: String = "programs.physicals.NamePrinter"
     override var description: String = "A program that prints the name of a concept"
     override var refs: Set<Concept> = setOf()
 }

@@ -3,6 +3,10 @@ package concepts
 import Concept
 import java.util.*
 
+fun Concept.toInput(): Input {
+    return Input().put( this )
+}
+
 class Input : Concept {
 
     override var name: String = "Input"

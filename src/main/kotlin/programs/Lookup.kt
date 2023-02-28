@@ -18,6 +18,8 @@ class Lookup : Program {
         return output
     }
 
+    override fun usage(): String = "Lookup [INPUT SIGNAL]"
+
     override var name: String = "programs.Lookup"
     override var description: String = "A program that looks up a concept"
     override var refs: Set<Concept> = setOf()
