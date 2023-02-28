@@ -12,12 +12,6 @@ interface Concept {
 
     fun synthetize( other: Concept ): Concept
 
-    // Methods
-    fun print() {
-        println("Name: $name")
-        println("Description: $description")
-    }
-
     private class AbstractConcept: Concept {
         override var name: String = ""
         override var description: String = ""

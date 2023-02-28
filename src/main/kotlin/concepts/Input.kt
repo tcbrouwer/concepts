@@ -17,6 +17,12 @@ class Input : Concept {
         return this
     }
 
+    // put all
+    fun put( concepts: Collection<Concept> ): Input {
+        concepts.forEach { essence.add( it ) }
+        return this
+    }
+
     // hi hi
     // val essense = "A concept that is the input of a program"
 

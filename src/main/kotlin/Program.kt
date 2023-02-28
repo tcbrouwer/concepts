@@ -41,7 +41,7 @@ interface Program : Concept {
         fun default(): Program {
             return NamePrinter()
         }
-    }
 
+    }
 
 }

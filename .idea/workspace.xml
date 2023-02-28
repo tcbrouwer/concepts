@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64ea3491-bb49-4c4c-9e34-ee80b65afc72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Clock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Is.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Evaluate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Lookup.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Pipe.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Computer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Computer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Concept.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Concept.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Delegation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Delegation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Idea.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Idea.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Program.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Input.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Input.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Output.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Output.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Plural.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Plural.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Success.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Success.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Good.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Good.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Not.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Not.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/HelloWorld.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/HelloWorld.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/ProgramPrinter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/NamePrinter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/RefLister.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/RefLister.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Clock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Clock.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/NamePrinter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/NamePrinter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +88,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>117</line>
+          <line>125</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>144</line>
+          <line>152</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -113,13 +101,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>131</line>
+          <line>139</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Computer.kt</url>
-          <line>47</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>58</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

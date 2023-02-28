@@ -6,13 +6,19 @@ import Program
 import concepts.Input
 import concepts.Output
 import concepts.Plural
+import java.lang.Thread.sleep
 
-class Clock : Idea(), Program {
+class Clock( val duration: Int ) : Idea(), Program {
     override fun main(input: Input): Output {
         val output = Output()
-        output.essence.add( this )
+        input.essence.forEach {
+            output.essence.add(Tick())
+            output.essence.add(Not())
+        }
         return output
     }
+
+    fun tick() = sleep(duration.toLong())
 
     private class Tick : Concept {
         override var name: String = "ideas.Clock.Tick"

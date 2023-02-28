@@ -15,7 +15,7 @@ class NamePrinter : Program {
         return output
     }
 
-    override var name: String = "programs.ProgramPrinter"
-    override var description: String = "A program that prints a program"
+    override var name: String = "programs.NamePrinter"
+    override var description: String = "A program that prints the name of a concept"
     override var refs: Set<Concept> = setOf()
 }

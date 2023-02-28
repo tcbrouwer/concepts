@@ -5,7 +5,15 @@ import ideas.Clock
 import ideas.Not
 import programs.*
 
+val PRIORITY = 5
+
 fun main(args: Array<String>) {
+
+    // take a computer
+    val computer = Computer( name = "testComputer1", clock = Clock( PRIORITY * 100 ) )
+    val output = Output()
+
+    computer.printAsConcept( " -- Starting -- " )
 
     // Convert the program arguments to a list of concepts
     val input = Input()
@@ -18,7 +26,7 @@ fun main(args: Array<String>) {
     val program = HelloWorld()
 
     // run the program
-    program.main( input )
+    output.essence.addAll( program.main( input ).essence )
 
     // create the arrow concept
     val arrow = Concept.actualize("Arrow", "A simple program that prints an arrow to the console.")
@@ -26,8 +34,9 @@ fun main(args: Array<String>) {
     val programConcept = Concept.actualize("Program", "A program is a set of instructions that performs a task.")
     // add the arrow concept to the program concept
     programConcept.addRef( arrow )
-    // print the program concept
-    programConcept.print()
+
+    // add programConcept to the output
+    output.essence.add( programConcept )
 
     // addition
     val addition = Concept.actualize("Addition", "Addition is the process of adding two numbers together.")
@@ -43,9 +52,11 @@ fun main(args: Array<String>) {
     val modulus = Concept.actualize("Modulus", "Modulus is the process of finding the remainder of a division.")
     // create a list of concepts
     val concepts = listOf(addition, subtraction, multiplication, division, exponentiation, modulus)
-    // create a new program
-    val refLister = RefLister()
 
+
+    // output the concepts
+    computer.printAsConcept( "- here are some arimethic concepts -" )
+    computer.print( concepts )
 
     // compute
     val compute = Concept.actualize("Compute", "Compute is the process of performing a computation.")
@@ -57,15 +68,11 @@ fun main(args: Array<String>) {
     fun upstream() {
         // create a new concept
         val concept = Concept.actualize("Hello World", "A simple program that prints 'Hello World' to the console.")
-        // print the concept
-        concept.print()
     }
 
     fun downstream() {
         // create a new concept
         val concept = Concept.actualize("Hello World", "A simple program that prints 'Hello World' to the console.")
-        // print the concept
-        concept.print()
     }
 
     // what is a question?
@@ -84,7 +91,6 @@ fun main(args: Array<String>) {
     val conceptIsThing = Concept.actualize("Concept is Thing", "A concept is a thing.")
 
     // compute the "concept is thing" concept
-    val computer = Computer( clock = Clock() )
     val program2 = Program.default()
     val result = computer.churn( program2, Input() )
 
@@ -111,11 +117,13 @@ fun main(args: Array<String>) {
 
     computer.churn( Pipe(), Input().put( Concept.actualize("CoPilot")).put( HelloWorld() ).put( Lookup() ) )
 
+    computer.shutdown()
+
 }
 
 fun godelChurn() {
     // get a computer
-    val computer = Computer( clock = Clock() )
+    val computer = Computer( name = "GodelChurner", clock = Clock( PRIORITY * 200 ) )
 
     // formulate a question
     // what is Godel?
@@ -134,7 +142,7 @@ fun godelChurn() {
     val godelRefs = computer.churn( RefLister(), input )
 
     // print the references (should use a program)
-    godelRefs.essence.forEach { it.print() }
+    godelRefs.essence.forEach { computer.print(it) }
 
     // iterate on the references
     val input2 = Input()
@@ -142,5 +150,7 @@ fun godelChurn() {
     val godelRef = computer.churn( RefLister(), input2 )
 
     // print the reference
-    godelRef.essence.forEach { it.print() }
+    godelRef.essence.forEach { computer.print(it) }
+
+    computer.shutdown()
 }
