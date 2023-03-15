@@ -5,9 +5,9 @@ import java.util.*
 
 class Output : Concept {
 
-    override var name: String = "Output"
-    override var description: String = "A concept that is the output of a program"
-    override var refs: Set<Concept> = setOf( Plural() )
+    override val name: String = "Output"
+    override val description: String = "A concept that is the output of a program"
+    override val refs: MutableSet<Concept> = mutableSetOf( Plural() )
     override fun synthetize(other: Concept): Concept {
         return Output().put( other )
     }

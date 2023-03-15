@@ -4,13 +4,13 @@ import Concept
 import Idea
 import Program
 import concepts.Input
-import concepts.Noop
+import programs.Noop
 import concepts.Output
 
 class Weave : Idea(), Program {
-    override var name: String = "ideas.Weave"
-    override var description: String = "A concept that is the output of a program"
-    override var refs: Set<Concept> = setOf()
+    override val name: String = "ideas.Weave"
+    override val description: String = "A concept that is the output of a program"
+    override val refs: MutableSet<Concept> = mutableSetOf()
     override fun main(input: Input): Output {
         var weave = 1
         val output = Output()

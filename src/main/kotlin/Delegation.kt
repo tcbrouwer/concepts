@@ -1,7 +1,7 @@
 class Delegation (
-    override var name: String,
-    override var description: String,
-    override var refs: Set<Concept>
+    override val name: String,
+    override val description: String,
+    override val refs: MutableSet<Concept>
 ) : Concept {
     override fun synthetize(other: Concept): Concept {
         return other.synthetize( this )

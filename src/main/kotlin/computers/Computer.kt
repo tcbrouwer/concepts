@@ -19,7 +19,7 @@ open class Computer (
 
     override var description: String = "A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming."
 
-    override var refs: Set<Concept> = setOf()
+    override var refs: MutableSet<Concept> = mutableSetOf()
 
     init {
         print(Concept.actualize("**** Starting computer $name with clock ${clock.name} ****", "programs.Printer"))

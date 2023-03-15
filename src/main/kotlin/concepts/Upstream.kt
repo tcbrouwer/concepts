@@ -4,9 +4,9 @@ import Concept
 import ideas.Good
 
 class Upstream : Concept {
-    override var name: String = "concepts.Upstream"
-    override var description: String = "A concept that is upstream"
-    override var refs: Set<Concept> = setOf( Good() )
+    override val name: String = "concepts.Upstream"
+    override val description: String = "A concept that is upstream"
+    override val refs: MutableSet<Concept> = mutableSetOf( Good() )
 
     override fun synthetize(other: Concept): Concept {
         val input = Input()

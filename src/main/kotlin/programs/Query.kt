@@ -4,6 +4,7 @@ import Concept
 import Program
 import concepts.Input
 import concepts.Output
+import concepts.Plural
 import programs.physicals.NamePrinter
 import programs.physicals.UserInput
 
@@ -17,7 +18,7 @@ class Query : Program {
 
     override fun usage() = "Query [INPUT SIGNAL]"
 
-    override var name: String = "programs.Query"
-    override var description: String = "A program that queries the user"
-    override var refs: Set<Concept> = setOf()
+    override val name: String = "programs.Query"
+    override val description: String = "A program that queries the user"
+    override val refs: MutableSet<Concept> = mutableSetOf()
 }

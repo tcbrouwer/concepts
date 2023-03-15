@@ -20,7 +20,6 @@ class Save : Program {
         return output
     }
     override fun usage(): String = "Save [INPUT SIGNAL]"
-    override var name: String = "programs.physicals.Save"
-    override var description: String = "A program that saves a concept to a file"
-    override var refs: Set<Concept> = setOf()
-}
+    override val name: String = "programs.physicals.Save"
+    override val description: String = "A program that saves a concept to a file"
+    override val refs: MutableSet<Concept> = mutableSetOf()}

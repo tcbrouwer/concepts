@@ -3,11 +3,11 @@ import ideas.Good
 
 open class Idea : Concept {
 
-    override var name: String = "Idea"
-    override var description: String = "A concept that is an idea"
-    override var refs: Set<Concept> = setOf()
+    override val name: String = "Idea"
+    override val description: String = "A concept that is an idea"
+    override val refs: MutableSet<Concept> = mutableSetOf()
     override fun synthetize(other: Concept): Concept {
-        return Plural( setOf(this, Good()))
+        return Plural( mutableSetOf(this, Good()))
     }
 
 }

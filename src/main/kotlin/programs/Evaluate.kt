@@ -24,6 +24,6 @@ class Evaluate : Program {
 
     override var name: String = "programs.Evaluate"
     override var description: String = "A program that evaluates all programs on input"
-    override var refs: Set<Concept> = setOf()
+    override var refs: MutableSet<Concept> = mutableSetOf()
 
 }

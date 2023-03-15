@@ -32,8 +32,8 @@ class Pipe : Program {
         return concept is Program
     }
 
-    override var name: String = "programs.Pipe"
-    override var description: String = "A program that pipes the first symbol"
-    override var refs: Set<Concept> = setOf()
+    override val name: String = "programs.Pipe"
+    override val description: String = "A program that pipes the first symbol"
+    override val refs: MutableSet<Concept> = mutableSetOf()
 
 }

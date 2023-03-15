@@ -30,16 +30,16 @@ class Clock(val wavelength: Double) : Idea(), Program {
     private class Tick : Concept {
         override var name: String = "ideas.Clock.Tick"
         override var description: String = "A concept that is the output of a program"
-        override var refs: Set<Concept> = setOf()
+        override var refs: MutableSet<Concept> = mutableSetOf()
         override fun synthetize(other: Concept): Concept {
             return this // synthesizing with tick is the same as tick
         }
     }
 
-    override var name: String = "ideas.Clock"
-    override var description: String = "A program that prints the current time"
-    override var refs: Set<Concept> = setOf()
+    override val name: String = "ideas.Clock"
+    override val description: String = "A program that prints the current time"
+    override val refs: MutableSet<Concept> = mutableSetOf()
     override fun synthetize(other: Concept): Concept {
-        return Plural( setOf(Tick(), other))
+        return Plural( mutableSetOf(Tick(), other))
     }
 }

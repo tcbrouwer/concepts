@@ -15,6 +15,5 @@ class UserInput : Program {
 
     override var name: String = "programs.physicals.UserInput"
     override var description: String = "A program that reads from the user"
-    override var refs: Set<Concept> = setOf()
-
+    override val refs: MutableSet<Concept> = mutableSetOf()
 }

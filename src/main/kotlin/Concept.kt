@@ -1,13 +1,17 @@
 interface Concept {
 
     // Properties
-    var name: String
-    var description: String
-    var refs: Set<Concept>
+    val name: String
+    val description: String
+    val refs: MutableSet<Concept>
 
     // add ref
     fun addRef(ref: Concept) {
-        refs = refs + ref
+        refs += ref
+    }
+
+    fun asConcept(): Concept {
+        return this
     }
 
     fun synthetize( other: Concept ): Concept
@@ -15,7 +19,7 @@ interface Concept {
     private class AbstractConcept: Concept {
         override var name: String = ""
         override var description: String = ""
-        override var refs: Set<Concept> = setOf()
+        override var refs: MutableSet<Concept> = mutableSetOf()
         override fun synthetize(other: Concept): Concept {
             return actualize(
                 name + other.name,
@@ -30,7 +34,7 @@ interface Concept {
             val abstractConcept = AbstractConcept()
             abstractConcept.name = name
             abstractConcept.description = description
-            abstractConcept.refs = refs
+            abstractConcept.refs = refs.toMutableSet()
             return abstractConcept
         }
     }

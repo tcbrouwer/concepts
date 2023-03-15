@@ -17,7 +17,6 @@ class NamePrinter : Program {
 
     override fun usage(): String = "NamePrinter [INPUT SIGNAL]"
 
-    override var name: String = "programs.physicals.NamePrinter"
-    override var description: String = "A program that prints the name of a concept"
-    override var refs: Set<Concept> = setOf()
-}
+    override val name: String = "programs.physicals.NamePrinter"
+    override val description: String = "A program that prints the name of a concept"
+    override val refs: MutableSet<Concept> = mutableSetOf()}

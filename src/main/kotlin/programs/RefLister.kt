@@ -18,8 +18,7 @@ class RefLister : Program {
         return concept.refs.toList()
     }
 
-    override var name: String = "programs.RefLister"
-    override var description: String = "A program that lists the refs of a concept"
-    override var refs: Set<Concept> = setOf()
-
+    override val name: String = "programs.RefLister"
+    override val description: String = "A program that lists the refs of a concept"
+    override val refs: MutableSet<Concept> = mutableSetOf()
 }

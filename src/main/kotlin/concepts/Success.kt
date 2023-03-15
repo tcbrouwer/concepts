@@ -7,9 +7,9 @@ import java.util.*
 
 class Success : Concept {
 
-        override var name: String = "Success"
-        override var description: String = "A concept that is the output of a program"
-        override var refs: Set<Concept> = setOf(
+        override val name: String = "Success"
+        override val description: String = "A concept that is the output of a program"
+        override val refs: MutableSet<Concept> = mutableSetOf(
             Not(),
             Not(),
             Good(),

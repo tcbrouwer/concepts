@@ -15,8 +15,8 @@ class HelloWorld : Program {
 
     override fun usage(): String = "HelloWorld"
 
-    override var name: String = "programs.HelloWorld"
-    override var description: String = "A program that prints 'Hello, World!'"
-    override var refs: Set<Concept> = setOf()
+    override val name: String = "programs.HelloWorld"
+    override val description: String = "A program that prints 'Hello, World!'"
+    override val refs: MutableSet<Concept> = mutableSetOf()
 
 }
