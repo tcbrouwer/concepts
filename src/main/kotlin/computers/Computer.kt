@@ -6,7 +6,9 @@ import concepts.Input
 import concepts.Output
 import ideas.Clock
 import ideas.Not
-import programs.physicals.NamePrinter
+import programs.Noop
+import programs.physicals.ConceptPrinter
+import programs.physicals.LinePrinter
 
 open class Computer (
     override var name: String,
@@ -63,14 +65,15 @@ open class Computer (
 
     fun print( concept: Concept) {
         val prepended = Concept.actualize("<$shortName> ", "prepended").synthetize( concept )
-        pump( NamePrinter(), Input().put( prepended ) )
+        pump( ConceptPrinter(), Input().put( prepended ) )
+        pump( LinePrinter(), Input() )
     }
     fun print( concepts: Collection<Concept>) {
         concepts.forEach { print( it ) }
     }
 
     fun printAsConcept( string: String ) {
-        pump( NamePrinter(), Input().put(Concept.actualize(string, "programs.Printer computer printAsConcept")),)
+        pump( ConceptPrinter(), Input().put(Concept.actualize(string, "programs.Printer computer printAsConcept")),)
     }
 
     private fun pump(program: Program, input: Input ): Output {

@@ -7,7 +7,7 @@ import concepts.Output
 import ideas.Clock
 import ideas.Good
 import programs.Noop
-import programs.physicals.NamePrinter
+import programs.physicals.ConceptPrinter
 import texts.Essay
 
 class SymbiosisLab : ProtoLab() {
@@ -53,7 +53,7 @@ class SymbiosisLab : ProtoLab() {
         input.essence.add(essay)
 
         // create a new program
-        val program = NamePrinter()
+        val program = ConceptPrinter()
 
         // run the program
         output.essence.addAll(program.main(input).essence)

@@ -1,6 +1,6 @@
 import concepts.Input
 import concepts.Output
-import programs.physicals.NamePrinter
+import programs.physicals.ConceptPrinter
 
 interface Program : Concept {
     fun main( input : Input ) : Output
@@ -21,7 +21,7 @@ interface Program : Concept {
 
     companion object {
         fun default(): Program {
-            return NamePrinter()
+            return ConceptPrinter()
         }
 
     }

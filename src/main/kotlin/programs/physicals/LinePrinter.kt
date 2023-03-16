@@ -7,15 +7,18 @@ import concepts.Output
 import concepts.Success
 
 // program printer
-class NamePrinter : Program {
+class LinePrinter : Program {
     override fun main( input: Input ) : Output {
-        input.essence.forEach { println(it.name) }
+        println() // one newline by default
+        input.essence.forEach {
+            println() // newline for each input element
+        }
         val output = Output()
         output.essence.add( Success() )
         return output
     }
 
-    override fun usage(): String = "NamePrinter [INPUT SIGNAL]"
+    override fun usage(): String = "LinePrinter [INPUT SIGNAL]"
 
     override val name: String = "programs.physicals.NamePrinter"
     override val description: String = "A program that prints the name of a concept"

@@ -5,40 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64ea3491-bb49-4c4c-9e34-ee80b65afc72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/AllLabs.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/HelloWorldLab.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/ProtoLab.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/SymbiosisLab.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/texts/Essay.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/texts/PlainText.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/texts/Tweet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/LinePrinter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Concept.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Concept.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Delegation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Delegation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Idea.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Idea.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Program.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/computers/Computer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/computers/Computer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Input.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Input.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Noop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Noop.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Output.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Output.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Plural.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Plural.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Success.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Success.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concepts/Upstream.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concepts/Upstream.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Clock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Clock.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Good.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Good.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Is.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Is.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Not.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Not.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ideas/Weave.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ideas/Weave.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/Evaluate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Evaluate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/HelloWorld.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/HelloWorld.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/Lookup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Lookup.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/Pipe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Pipe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/laboratories/AllLabs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/AllLabs.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/laboratories/HelloWorldLab.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/HelloWorldLab.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/laboratories/SymbiosisLab.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/laboratories/SymbiosisLab.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/Query.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/Query.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/RefLister.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/RefLister.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/NamePrinter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/NamePrinter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/Save.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/Save.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/UserInput.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/UserInput.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/NamePrinter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/programs/physicals/ConceptPrinter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,12 +119,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/laboratories/HelloWorldLab.kt</url>
-          <line>168</line>
+          <line>169</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/laboratories/HelloWorldLab.kt</url>
-          <line>195</line>
+          <line>196</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -157,7 +132,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/laboratories/HelloWorldLab.kt</url>
-          <line>182</line>
+          <line>183</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

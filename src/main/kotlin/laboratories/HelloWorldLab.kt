@@ -12,7 +12,8 @@ import ideas.Clock
 import ideas.Not
 import ideas.Weave
 import programs.*
-import programs.physicals.NamePrinter
+import programs.physicals.ConceptPrinter
+import programs.physicals.LinePrinter
 import programs.physicals.Save
 import programs.physicals.UserInput
 
@@ -118,13 +119,13 @@ class HelloWorldLab : ProtoLab() {
         val synth = synthesize.synthetize(compute).synthetize(actualization)
 
         // print the concept
-        computer.churn(NamePrinter(), Input().put(synth))
+        computer.churn(ConceptPrinter(), Input().put(synth))
 
         // recurse
         val a = computer.churn(RefLister(), Input().put(synth))
         val b = computer.churn(RefLister(), Input().put(a))
         val c = computer.churn(RefLister(), Input().put(b))
-        computer.churn(NamePrinter(), Input().put(Concept.actualize("Output of recursion")).put(c))
+        computer.churn(LinePrinter(), Input().put(Concept.actualize("Output of recursion")).put(c))
 
         computer.churn(Evaluate(), Input().put(HelloWorld()).put(Lookup()))
 
@@ -136,7 +137,7 @@ class HelloWorldLab : ProtoLab() {
 
         // get some input, then print it
         val x = slowComputer.churn(UserInput(), Input())
-        slowComputer.churn(NamePrinter(), x.toInput())
+        slowComputer.churn(ConceptPrinter(), x.toInput())
 
         // weave
         val copilotWeaveDefinition =
