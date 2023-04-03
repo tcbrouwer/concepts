@@ -1,0 +1,27 @@
+# Concepts
+# 1. Concepts are a way to organize and structure things that are related to each other.
+# 2. Concepts have an ordering
+
+Q: What is a concept?
+A: A concept is a way to organize and structure things that are related to each other.
+
+Q: What is a concept hierarchy?
+A: A concept hierarchy is a way to organize and structure things that are related to each other.
+
+Q: What is a maximal concept?
+A: A maximal concept is a concept that has no more general concept.
+
+Q: What is a minimal concept?
+A: A minimal concept is a concept that has no more specific concept.
+
+Q: What is a concept lattice?
+A: A concept lattice is a set of concepts that are related to each other.
+
+Q: What is an optimal concept?
+A: An optimal concept is a concept that is maximal and minimal.
+
+Q: Is the optimal concept unique?
+A: Yes, the optimal concept is unique.
+
+Q: What is the optimal concept?
+A: See "Ideas" slide.

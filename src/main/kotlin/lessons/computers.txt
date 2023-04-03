@@ -1,0 +1,41 @@
+# describe what the parts of a computer are and what they do
+# hardware and software
+# input and output devices
+# storage and memory
+# networks and the internet
+
+Q: hardware
+A: the physical parts of a computer
+
+Q: software
+A: the programs that run on a computer
+
+Q: input devices
+A: devices that allow you to enter data into a computer
+
+Q: output devices
+A: devices that allow you to see the results of your work
+
+Q: storage devices
+A: devices that allow you to save your work
+
+Q: memory
+A: the temporary storage of data
+
+Q: networks
+A: a group of computers connected together
+
+Q: internet
+A: a network of networks
+
+Q: computer
+A: a device that accepts data as input, processes the data according to a set of instructions, and produces information as output
+
+Q: input
+A: the data that is entered into a computer
+
+Q: output
+A: the results of the computer's processing
+
+Q: storage
+A: the place where data is saved
