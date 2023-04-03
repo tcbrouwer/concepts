@@ -1,0 +1,25 @@
+# Laboratories
+# Places to experiments
+
+# 1. Create a new file called lab.py
+# 2. Write a function called lab1 that takes a list of numbers as a parameter and returns the sum of the numbers in the list.
+# 3. Write a function called lab2 that takes a list of numbers as a parameter and returns the product of the numbers in the list.
+# 4. Write a function called lab3 that takes a list of numbers as a parameter and returns the average of the numbers in the list.
+# 5. Write a function called lab4 that takes a list of numbers as a parameter and returns the median of the numbers in the list.
+# 6. Write a function called lab5 that takes a list of numbers as a parameter and returns the mode of the numbers in the list.
+# 7. Write a function called lab6 that takes a list of numbers as a parameter and returns the range of the numbers in the list.
+# 8. Write a function called lab7 that takes a list of numbers as a parameter and returns the standard deviation of the numbers in the list.
+# 9. Write a function called lab8 that takes a list of numbers as a parameter and returns the variance of the numbers in the list.
+# 10. Write a function called lab9 that takes a list of numbers as a parameter and returns the coefficient of variation of the numbers in the list.
+# 11. Write a function called lab10 that takes a list of numbers as a parameter and returns the z-score of the numbers in the list.
+# 12. Write a function called lab11 that takes a list of numbers as a parameter and returns the skewness of the numbers in the list.
+# 13. Write a function called lab12 that takes a list of numbers as a parameter and returns the kurtosis of the numbers in the list.
+# 14. Write a function called lab13 that takes a list of numbers as a parameter and returns the quartiles of the numbers in the list.
+# 15. Write a function called lab14 that takes a list of numbers as a parameter and returns the interquartile range of the numbers in the list.
+# 16. Write a function called lab15 that takes a list of numbers as a parameter and returns the five-number summary of the numbers in the list.
+# 17. Write a function called lab16 that takes a list of numbers as a parameter and returns the sum of the squares of the numbers in the list.
+# 18. Write a function called lab17 that takes a list of numbers as a parameter and returns the sum of the cubes of the numbers in the list.
+# 19. Write a function called lab18 that takes a list of numbers as a parameter and returns the sum of the fourth powers of the numbers in the list.
+# 20. Write a function called lab19 that takes a list of numbers as a parameter and returns the sum of the fifth powers of the numbers in the list.
+
+Challenge: use as few lines of code as possible to write each function, and reuse code as much as possible.
