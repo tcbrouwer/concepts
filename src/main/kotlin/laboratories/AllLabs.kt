@@ -19,6 +19,9 @@ fun main(args: Array<String>) {
     val symbiosisLab = SymbiosisLab()
     runLab( symbiosisLab )
 
+    val gitlab = GitLab()
+    runLab( gitlab )
+
 
 
 }
